@@ -1,7 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
 
-# pygmail
+# py-gmail
 
 ### Description
 
@@ -18,7 +18,7 @@ pip install pygmail
 ### Usage
 
 ``` python
-from pygmail.send_email import Pygmail
+from py-gmail.send_email import Pygmail
 
 pygmail = Pygmail(
         smtp_username="your_email@gmail.com",
