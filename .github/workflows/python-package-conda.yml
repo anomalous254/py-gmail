@@ -28,11 +28,14 @@ jobs:
     - name: Clean Conda
       run: conda clean -a
 
+    - name: List Conda Environments
+      run: conda env list
+
     - name: Create Conda Environment
-      run: conda env create -f environment.yml
+      run: conda env create -n myenv -f environment.yml
 
     - name: Activate Conda Environment
-      run: conda activate base
+      run: conda activate myenv
 
     - name: Install flake8 for linting
       run: conda install flake8
